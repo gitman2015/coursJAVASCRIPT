@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>JavaScript - II/02 affichage</title>
+
+    /* Message d'avertissement
+    <!-- <script src="affichage.js" async></script> -->
+    <script src="types.js" defer></script>
+</head>
+
+<body>
+
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+    <div class="container-fluid bg-info p-5 text-center">
+        <h1>JavaScript - II/03 - Les types de données</h1>
+        <p>Les différents types de données </p>
+    </div>
+
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+    <div class="container">
+        <section class="row mt-4">
+            <div class="col-sm-6">
+                <h2>1- Sept types de données en JS</h2>
+            </div>
+
+            <ol>
+                <li><a href="#string"><span class="surligne">String</span></a> ou chaine de caractères</li>
+                <li><a href=""><span class="surligne">Number</span></a> ou nombre</li>
+                <li><a href=""><span class="surligne">Boolean</span></a> ou booléen</li>
+                <li><a href=""><span class="surligne">NULL</span></a> ou "vide"</li>
+                <li><a href=""><span class="surligne">undefined</span></a> ou indéfini</li>
+                <li><a href=""><span class="surligne">Symbol</span></a> ou symbole</li>
+                <li><a href=""><span class="surligne">Object</span></a> ou objet</li>
+            </ol>
+            <p>Pour connatre les types de données on utilise la fonction <code>typeof()</code></p>
+        </section>
+
+        <section class="row mt-4">
+            <h3 id="string">String</h3>
+            <div class="col-12">
+                <!-- p#p$*3 -->
+                <p id="p1">Ce contenu sera remplacée</p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+
+                <h4>A propos des guillemets <code>"..."</code>,des quotes <code>"..."</code> et sur le caractère d'échappement ou antislash <code>\</code> </h4>
+
+                <p>En JavaScript, on va pouvoir utiliser indifféremment des guillemets doubles ou des quotes pour
+                    entourer une chaîne de caractères et ces deux méthodes vont être strictement équivalentes à la
+                    différence d’autres langages comme le PHP par exemple.<br> Faites attention cependant à un point :
+                    si votre chaîne contient un caractère qui est le même que le délimiteur de chaîne choisi, il faudra
+                    neutraliser ce caractère en l’échappant au moyen d’un antislash ou changer de délimiteur.</p>
+
+             </div>
+        </section>
+
+    </div>
+    <!-- fin div container -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
