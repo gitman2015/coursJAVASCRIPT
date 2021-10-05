@@ -30,7 +30,7 @@
 
         // 1- AFFICHAGE
 
-        document.write('<h2 style="background: orange;width: 50%; color: #fff;text-align: center;">1- AFFICHAGE</h2>');
+        document.write('<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">1- AFFICHAGE</h2>');
 
         var maBoite; // je déclare une variable
         maBoite = 10; //je lui affecte une valeur ici un nombre un "number"
@@ -91,20 +91,128 @@
 
         // 2- TYPE DE DONNEES
         document.write(
-            '<h2 style="background: orange;width: 50%; color: #fff;text-align: center;">2- TYPE DE DONNEES</h2>');
+            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">2- TYPE DE DONNEES</h2>');
 
         var monTexte = 'Voici une phrase pour moi avec une \'';
         document.write('<p>' + monTexte + '<p>');
-        console.log(typeof(monTexte));
+        console.log(typeof (monTexte));
 
-        console.log(typeof(noteEval));
+        console.log(typeof (noteEval));
 
-        document.write(typeof(monTexte)+ '<br>');
-        document.write(typeof(noteEval)+ '<br>');
+        document.write(typeof (monTexte) + '<br>');
+        document.write(typeof (noteEval) + '<br>');
 
         // Mini Exo afficher la phrase suivante dans la page :"Voici une phrase pour moi avec une avec ' est une variable qui contient string"
 
         document.write('Voici une phrase pour moi avec une avec \' est une variable qui contient string');
+
+        // 3-CONSTANTES
+
+        document.write(
+            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">3- CONSTANTES</h2>');
+        const neBougePas = 'Ma constante impossible à modifier';
+        let meteo = 'beau temps';
+        console.log(meteo);
+
+        meteo = 'mauvais temps';
+        console.log(meteo);
+        console.log(neBougePas);
+
+        //min exo afficher avec document.write la phrase suivante dans un p avec un fond gris " la constante neBougePas contient "Ma constante impossible à modifier !"
+
+        // neBougePas= 'coucou';
+
+        document.write('<p style="background-color: darkblue; color: white;"> La constante neBougePas contient "' + neBougePas + '"</p>"');
+        document.write(`<p style="background-color: darkblue; color: white;"> la constante neBouge pas contient  "${neBougePas}  !" </p>`);
+
+        //4- CONCATENER
+        document.write(
+            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">4- CONCATENER</h2>');
+
+        let nom = "ouasti";
+        let prenom = "rachid";
+
+        document.write('<p style="background-color: darkblue; color: white;"> The name is ' + prenom + ', ' + prenom + ' ' + nom + '</p>');
+        document.write(`<p style="background-color: darkblue; color: white;"> The name is ${nom}, ${prenom} ${nom}</p>`);
+
+        nom = "Deu";
+        prenom = "Emilie";
+
+        document.write('<p style="background-color: darkblue; color: white;"> The name is ' + prenom + ', ' + prenom + ' ' + nom + '</p>');
+        document.write(`<p style="background-color: darkblue; color: white;"> The name is ${nom}, ${prenom} ${nom}</p>`);
+
+        //5- OPERATEURS NUMERIQUES
+        document.write(
+            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">5- OPERATEURS NUMERIQUES</h2>');
+
+        let addition = 10 + 5;
+        // exo afficher le résultat d'une addition : 15
+
+        //<p>le resultat d'une addition :15 </p>
+
+        document.write('<p>Le résultat d\'une addition: ' + addition + '</p>');
+
+        // multiplication
+        let multiplication = 10 * 5;
+        document.write('<p>Le résultat d\'une multiplication: ' + multiplication + '</p>');
+
+        // soustraction
+        let soustraction = 10 - 5;
+        document.write('<p>Le résultat d\'une soustraction: ' + soustraction + '</p>');
+
+        // division
+        let division = 10 / 3;
+        document.write('<p>Le résultat d\'une division: ' + division + '</p>');
+
+        // modulo
+        // exemple pour l'utilisation du modulo; répondre à la question suivante : j'ai 10 billes , je les partage entre 3 personnes il m'en reste combien
+
+        let modulo = 10 % 3;
+        console.log(modulo);
+
+        // exo affichez: le modulo de 10 % 3 est 1
+        document.write('<p>Le modulo de 10 % 3: ' + modulo + '<p>');
+
+        // EXO 
+        document.write('<h3 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">Un petit exercice avec prompt() et alert()</h3>');
+
+        // let age = prompt("Quel age avez-vous ?")
+        // document.write('<p>Vous avez ' + age + ' ans</p>');
+
+        // EXO 
+        // Consigne
+        // 1-récupérer dans un prompt() une valeur numérique donnée par un utilisateur
+
+        // 2-envoyez ensuite une alert indiquant le résultat de cette valeur au carré puis au cube
+        // 3-puis on fera un document write
+
+        let votreChiffre=prompt('Entrez une valeur numérique');
+        document.write('<p>La valeur est '+votreChiffre+'</p>'+'<p>La valeur au carré est '+votreChiffre**2+'</p>'+'<p>La valeur au cube est '+votreChiffre**3+'</p>');
+        alert('La valeur est '+votreChiffre+'\n'+'La valeur au carré est '+votreChiffre**2+'\n'+'La valeur au cube est '+votreChiffre**3);
+
+        document.write('<p>La valeur est '+votreChiffre+'</p>'+'<p>La valeur au carré est '+Math.pow(votreChiffre,2)+'</p>'+'<p>La valeur au cube est '+Math.pow(votreChiffre,3)+'</p>');
+        // alert('La valeur est '+votreChiffre+'\n'+'La valeur au carré est '+Math.pow(votreChiffre,2)+'\n'+'La valeur au cube est '+Math.pow(votreChiffre,3));
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 </head>
 

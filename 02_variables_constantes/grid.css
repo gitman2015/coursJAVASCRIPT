@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightskyblue;
+}
+#container  {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.item {
+    text-align: center;
+    padding:15px;
+    margin: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    color: white;
+    border: 5px solid darkorange;
+}
