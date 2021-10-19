@@ -26,3 +26,7 @@ let chaine='';
 if(Nan){
     alert('true ///vrai');
 }
+if ((x > 1) == false) {
+    alert('x et y ne contiennent pas la même valeur');
+}
+

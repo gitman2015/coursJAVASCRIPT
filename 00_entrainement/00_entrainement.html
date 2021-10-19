@@ -30,7 +30,9 @@
 
         // 1- AFFICHAGE
 
-        document.write('<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">1- AFFICHAGE</h2>');
+        document.write(
+            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">1- AFFICHAGE</h2>'
+        );
 
         var maBoite; // je déclare une variable
         maBoite = 10; //je lui affecte une valeur ici un nombre un "number"
@@ -91,7 +93,8 @@
 
         // 2- TYPE DE DONNEES
         document.write(
-            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">2- TYPE DE DONNEES</h2>');
+            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">2- TYPE DE DONNEES</h2>'
+        );
 
         var monTexte = 'Voici une phrase pour moi avec une \'';
         document.write('<p>' + monTexte + '<p>');
@@ -109,7 +112,8 @@
         // 3-CONSTANTES
 
         document.write(
-            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">3- CONSTANTES</h2>');
+            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">3- CONSTANTES</h2>'
+        );
         const neBougePas = 'Ma constante impossible à modifier';
         let meteo = 'beau temps';
         console.log(meteo);
@@ -122,28 +126,37 @@
 
         // neBougePas= 'coucou';
 
-        document.write('<p style="background-color: darkblue; color: white;"> La constante neBougePas contient "' + neBougePas + '"</p>"');
-        document.write(`<p style="background-color: darkblue; color: white;"> la constante neBouge pas contient  "${neBougePas}  !" </p>`);
+        document.write('<p style="background-color: darkblue; color: white;"> La constante neBougePas contient "' +
+            neBougePas + '"</p>"');
+        document.write(
+            `<p style="background-color: darkblue; color: white;"> la constante neBouge pas contient  "${neBougePas}  !" </p>`
+        );
 
         //4- CONCATENER
         document.write(
-            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">4- CONCATENER</h2>');
+            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">4- CONCATENER</h2>'
+        );
 
         let nom = "ouasti";
         let prenom = "rachid";
 
-        document.write('<p style="background-color: darkblue; color: white;"> The name is ' + prenom + ', ' + prenom + ' ' + nom + '</p>');
-        document.write(`<p style="background-color: darkblue; color: white;"> The name is ${nom}, ${prenom} ${nom}</p>`);
+        document.write('<p style="background-color: darkblue; color: white;"> The name is ' + prenom + ', ' + prenom +
+            ' ' + nom + '</p>');
+        document.write(
+            `<p style="background-color: darkblue; color: white;"> The name is ${nom}, ${prenom} ${nom}</p>`);
 
         nom = "Deu";
         prenom = "Emilie";
 
-        document.write('<p style="background-color: darkblue; color: white;"> The name is ' + prenom + ', ' + prenom + ' ' + nom + '</p>');
-        document.write(`<p style="background-color: darkblue; color: white;"> The name is ${nom}, ${prenom} ${nom}</p>`);
+        document.write('<p style="background-color: darkblue; color: white;"> The name is ' + prenom + ', ' + prenom +
+            ' ' + nom + '</p>');
+        document.write(
+            `<p style="background-color: darkblue; color: white;"> The name is ${nom}, ${prenom} ${nom}</p>`);
 
         //5- OPERATEURS NUMERIQUES
         document.write(
-            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">5- OPERATEURS NUMERIQUES</h2>');
+            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">5- OPERATEURS NUMERIQUES</h2>'
+        );
 
         let addition = 10 + 5;
         // exo afficher le résultat d'une addition : 15
@@ -174,7 +187,9 @@
         document.write('<p>Le modulo de 10 % 3: ' + modulo + '<p>');
 
         // EXO 
-        document.write('<h3 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">Un petit exercice avec prompt() et alert()</h3>');
+        document.write(
+            '<h3 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">Un petit exercice avec prompt() et alert()</h3>'
+        );
 
         // let age = prompt("Quel age avez-vous ?")
         // document.write('<p>Vous avez ' + age + ' ans</p>');
@@ -186,33 +201,49 @@
         // 2-envoyez ensuite une alert indiquant le résultat de cette valeur au carré puis au cube
         // 3-puis on fera un document write
 
-        let votreChiffre=prompt('Entrez une valeur numérique');
-        document.write('<p>La valeur est '+votreChiffre+'</p>'+'<p>La valeur au carré est '+votreChiffre**2+'</p>'+'<p>La valeur au cube est '+votreChiffre**3+'</p>');
-        alert('La valeur est '+votreChiffre+'\n'+'La valeur au carré est '+votreChiffre**2+'\n'+'La valeur au cube est '+votreChiffre**3);
+        let votreChiffre = prompt('Entrez une valeur numérique');
+        document.write('<p>La valeur est ' + votreChiffre + '</p>' + '<p>La valeur au carré est ' + votreChiffre ** 2 +
+            '</p>' + '<p>La valeur au cube est ' + votreChiffre ** 3 + '</p>');
+        alert('La valeur est ' + votreChiffre + '\n' + 'La valeur au carré est ' + votreChiffre ** 2 + '\n' +
+            'La valeur au cube est ' + votreChiffre ** 3);
 
-        document.write('<p>La valeur est '+votreChiffre+'</p>'+'<p>La valeur au carré est '+Math.pow(votreChiffre,2)+'</p>'+'<p>La valeur au cube est '+Math.pow(votreChiffre,3)+'</p>');
+        document.write('<p>La valeur est ' + votreChiffre + '</p>' + '<p>La valeur au carré est ' + Math.pow(
+            votreChiffre, 2) + '</p>' + '<p>La valeur au cube est ' + Math.pow(votreChiffre, 3) + '</p>');
         // alert('La valeur est '+votreChiffre+'\n'+'La valeur au carré est '+Math.pow(votreChiffre,2)+'\n'+'La valeur au cube est '+Math.pow(votreChiffre,3));
 
-  
 
+        // 6- CONDITIONS
 
+        document.write(
+            '<h2 style="background: orange; margin: auto; width: 50%; color: #fff;text-align: center;">3- CONDITIONS </h2>'
+        );
 
+        let a = 2,
+            b = 5,
+            c = 2;
+        console.log(a, b, c);
 
+        //Mini Exo
+        // Si a est supérieur à b, j'écris "a est supérieur" SINON j'écris a n'est pas supérieur à b dans un document.write
 
+        if (a > b) {
+            document.write('a est supérieur à b')
+        } else {
+            document.write('a n\'est pas supérieur à b');
+        }
 
+        // tester l'égalité de a et de b et montrer ce test dans un document (en affichant a et b)
+        if (a == b) {
+            document.write('<p>a: ' + a + ' b: ' + b + ' : a est égal à b.</p>');
+        } else {
+            document.write('<p>a: ' + a + ' b: ' + b + ' : a non égal à b.</p>');
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
+        if (a === b) {
+            document.write('<p>a: ' + a + ' b: ' + b + ' : a est égal et en type à b.</p>');
+        } else {
+            document.write('<p>a: ' + a + ' b: ' + b + ' : a non égal et/ou en type à b.</p>');
+        }
     </script>
 </head>
 
