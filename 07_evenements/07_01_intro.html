@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .avion {
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="titre2">Mon titre de niveau 2</h2>
+    <div class="avion">Airbus 1-A320</div>
+    <div class="avion">Airbus 2-A320</div>
+    <p class="avion"></p>
+    <div class="avion">Airbus 3-A320</div>
+
+    <p id="paragraphe">Paragraphe 1</p>
+    <p>Paragraphe 2</p>
+    <p title="InfoBulle">Paragraphe 3</p>
+    <p>Paragraphe 4</p>
+    <p>Paragraphe 5</p>
+
+
+    <script>
+        // sélection naturelle 
+        var monTitreN2 = titre2;
+        console.log(monTitreN2);
+
+        //sélection par id
+        let monTitreN2bis = document.getElementById('monTitreN2');
+        console.log(monTitreN2bis);
+
+        //sélection par classe
+        let lesAvions = document.getElementsByClassName('avion');
+        console.log(lesAvions);
+
+        console.log(lesAvions[1]);
+
+        //injecter le texte suivant 'il est beau mon avion' dans l'élément indice 1
+        console.log(lesAvions[1].innerHTML);
+
+        lesAvions[1].innerHTML = 'il est beau mon avion';
+        console.log(lesAvions[1].innerHTML);
+
+        //modifier le contenu du h2 pour écrire 'il est beau mon bonnet'
+        let montitre2 = document.getElementById('titre2');
+        montitre2.innerHTML = 'il est beau mon bonnet';
+        console.log(montitre2.innerHTML);
+
+        let lesP = document.getElementsByTagName('p');
+        console.log('lesP:', lesP);
+
+        console.log(lesP[2].innerHTML);
+
+        // faire une boucle for pour passer le texte des p en red et mettre une margin top aux p de 30px
+
+        console.log('Les paraggraphes modifiés: ')
+        for (let i = 0; i < lesP.length; i++) {
+            console.log(lesP[i]);
+            lesP[i].style.color = "Red";
+            lesP[i].style.marginTop = "30px";
+        }
+
+        //on essaie maintenant avec query
+        let monTitre2 = document.querySelector('#titre2');
+
+        let lesP2 = document.querySelectorAll('p');
+        console.log('lesPQuery:', lesP2);
+
+        let paragraphe = document.querySelector('#para');
+        // let paragraphe=document.querySelector('p#para'); //c'est mieux
+        console.log('paragraghe');
+
+        // On veut les div dont la classe est avion
+        let divLesAvions = document.querySelectorAll('div.avion');
+        console.log('divLesAvionsQueryAll', divLesAvions);
+
+        // à la seconde div, on applique maintenant un fond bleu un texte blanc, en gras, et taille de typo 2em
+        let secondeDiv = divLesAvions[1];
+        console.log(secondDiv.innerHTML);
+
+        secondDiv.style.backgroundColor = "lightBlue";
+        secondDiv.style.color = "white";
+        secondDiv.style.fontWeight = "bold";
+        secondDiv.style.fontSize = "2em";
+        secondDiv.style.height = "400px";
+        secondDiv.style.width = "400px";
+
+        
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
